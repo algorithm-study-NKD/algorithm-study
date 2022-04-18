@@ -1,3 +1,5 @@
+# https://programmers.co.kr/learn/courses/30/lessons/60057
+
 def solution(s):
     answer = 9876543210 # max값 설정
     leng = len(s) # s의 길이, aabbaccc
