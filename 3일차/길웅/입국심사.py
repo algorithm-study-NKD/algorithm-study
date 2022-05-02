@@ -2,10 +2,10 @@
 # https://programmers.co.kr/learn/courses/30/lessons/43238
 
 def solution(n: int, times: list):
-    times.sort()
+    max_time = max(times)
 
     l = 0
-    r = times[-1] * n + 1
+    r = max_time * n + 1
 
     while l < r:
         md = (l + r) // 2
