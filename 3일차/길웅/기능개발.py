@@ -11,10 +11,12 @@ def solution(progresses, speeds):
         days[i] = math.ceil((100 - progresses[i]) / speeds[i])
 
     i = 0
-    day = 0
+    day = days[0]
     answer = []
 
     while True:
+        answer.append(0)
+        
         while i < n:
             if days[i] <= day:
                 answer[-1] += 1
@@ -25,7 +27,6 @@ def solution(progresses, speeds):
         
         if i < n:
             day = days[i]
-            answer.append(0)
         else:
             break
 
