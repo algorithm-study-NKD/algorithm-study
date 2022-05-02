@@ -14,7 +14,7 @@ def solution(progresses, speeds):
     day = days[0]
     answer = []
 
-    while True:
+    while i < n:
         answer.append(0)
         
         while i < n:
@@ -23,11 +23,7 @@ def solution(progresses, speeds):
                 i += 1
                 continue
             else:
+                day = days[i]
                 break
-        
-        if i < n:
-            day = days[i]
-        else:
-            break
 
     return answer
