@@ -1,3 +1,6 @@
+# 프로그래머스 '짝지어 제거하기'
+# https://programmers.co.kr/learn/courses/30/lessons/12973
+
 def solution(s):
     stk = []
     stk.append(s[0])

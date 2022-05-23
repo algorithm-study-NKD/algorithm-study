@@ -1,3 +1,6 @@
+# 프로그래머스 '행렬 테두리 회전하기'
+# https://programmers.co.kr/learn/courses/30/lessons/77485
+
 def rotate(map, query, MAX_NUM):
     i1, j1, i2, j2 = query[0] - 1, query[1] - 1, query[2] - 1, query[3] - 1
 
