@@ -35,7 +35,7 @@ def check(y, x, place):
 
 def find(place):
     # 범위 안 벗어나도록 패딩 추가
-    place = list(map(lambda p : '0{0}00'.format(p), place))
+    place = ['0{0}00'.format(p) for p in place]
     place.extend(['00000000', '00000000'])
     
     for i in range(7):
